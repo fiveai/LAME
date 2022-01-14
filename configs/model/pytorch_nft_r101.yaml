@@ -1,0 +1,17 @@
+MODEL:
+  META_ARCHITECTURE: "Classifier"
+  WEIGHTS: "checkpoints/pytorch/R-101.pth"
+  NORMALIZE_INPUT: True
+  STANDARDIZE_INPUT: True
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  CLS_HEAD:
+    TYPE: 'linear'
+    NUM_CLASSES: 1000
+    IN_FEATURES: ["res5"]
+  RESNETS:
+    DEPTH: 101
+    OUT_FEATURES: ["res5"]  # res4 for C4 backbone, res2..5 for FPN backbone
+    STRIDE_IN_1X1: False # according to original comments, should be false
+INPUT:
+  FORMAT: "RGB"

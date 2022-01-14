@@ -1,0 +1,5 @@
+MODEL:
+  META_ARCHITECTURE: "Classifier"
+  WEIGHTS: "standard_simclr_r50_last_layer_MODEL.DEVICE=cuda/model_final.pth"
+  NORMALIZE_INPUT: True
+  STANDARDIZE_INPUT: False

@@ -1,0 +1,11 @@
+MODEL:
+  META_ARCHITECTURE: "Classifier"
+  WEIGHTS: "checkpoints/simclr/R-50.pth"
+  NORMALIZE_INPUT: True
+  STANDARDIZE_INPUT: False
+  RESNETS:
+    STRIDE_IN_1X1: False # according to original comments, should be false
+  CLS_HEAD:
+    TYPE: 'linear'
+INPUT:
+  FORMAT: "RGB"

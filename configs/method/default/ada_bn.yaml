@@ -1,0 +1,7 @@
+ADAPTATION:
+  METHOD: "AdaBN"
+  HPARAMS2TUNE: ['ADAPTATION.PARAMS2ADAPT', 'MODEL.BACKBONE.BN_MOMENTUM']
+  HPARAMS_VALUES: [
+                  ["0-BN", "1-BN", "all-BN"],  # noqa: E126
+                  [0.1, 0.3, 0.6, 0.8, 1.0],  # noqa: W191
+                ]

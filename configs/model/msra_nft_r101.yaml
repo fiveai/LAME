@@ -1,0 +1,5 @@
+MODEL:
+  META_ARCHITECTURE: "Classifier"
+  WEIGHTS: "checkpoints/msra/R-101.pkl"
+  RESNETS:
+    DEPTH: 101
