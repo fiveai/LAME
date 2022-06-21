@@ -1,4 +1,4 @@
-Official code for the CVPR 2022 paper "Parameter-free Online Test-time Adaptation", by Malik Boudiaf, Romain Mueller, Ismail Ben Ayed and Luca Bertinetto.
+Official code for the CVPR 2022 (oral) paper ["Parameter-free Online Test-time Adaptation"](https://arxiv.org/abs/2201.05718), by Malik Boudiaf, Romain Mueller, Ismail Ben Ayed and Luca Bertinetto.
 
 
 To make reproduction as easy as possible, all necessary recipes to reproduce experiments are gathered in the Makefile. Below we detail all the steps to set-up your the environment, download data, models and reproduce all the results in the paper.
